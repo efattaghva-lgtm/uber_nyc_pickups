@@ -55,4 +55,10 @@ st.subheader("Portfolio Optimization")
 st.write("Optimal Portfolio Weights:")
 for ticker, weight in zip(tickers, optimal_weights):
     st.write(f"{ticker}: {weight:.2%}")
+optimal_weights = portfolio_optimization(returns_data)
+
+st.subheader("Portfolio Optimization")
+st.write("Optimal Portfolio Weights:")
+for ticker, weight in zip(tickers, optimal_weights):
+    st.write(f"{ticker}: {weight:.2%}")
 
